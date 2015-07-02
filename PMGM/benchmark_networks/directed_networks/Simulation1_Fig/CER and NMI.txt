@@ -1,0 +1,10 @@
+For both methods, run one time.
+
+DC: cer = 0
+
+    NMI = 1
+
+
+NoDC:  cer = 0
+
+       NMI = 1
