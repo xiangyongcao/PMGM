@@ -1,1 +1,0 @@
-benchmark.exe -N 500 -k 15 -maxk 150 -mu 0.1 -minc 100 -maxc 200
