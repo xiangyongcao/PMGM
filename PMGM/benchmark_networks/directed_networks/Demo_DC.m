@@ -1,13 +1,11 @@
+% demo in benchmark networks for DCPMGM
 tic;
 clear all
 addpath(genpath(pwd));
 
-
-% system('benchmark.exe -N 500 -k 15 -maxk 150 -mu 0.1 -minc 100 -maxc 200')
+system('benchmark.exe -N 500 -k 15 -maxk 150 -mu 0.1 -minc 100 -maxc 200')
 load('network.dat')
 load('community.dat')
-
-
 
 N = size(community,1);
 
@@ -44,9 +42,3 @@ disp(['True proportion is: ', num2str(True_Pi)]);
 cer_DC = CER(Est_Label, T_Label);NMI_DC = nmi(Est_Label, T_Label);
 disp(['CER_DC is: ',num2str(cer_DC)]);disp(['NMI_DC is: ',num2str(NMI_DC)]);
 toc;
-
-% figure;
-% plot(1:30,llh(1:30));
-% fig_deal;
-% xlabel('Iteration');
-% ylabel('Log-likelihood')
